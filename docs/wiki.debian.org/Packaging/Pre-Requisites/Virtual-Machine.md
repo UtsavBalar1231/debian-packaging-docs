@@ -7,9 +7,10 @@
 Contents
 
 1. [Virtual Box](#Virtual_Box)
-2. [Vagrant](#Vagrant)
+2. [Incant](#Incant)
+3. [Vagrant](#Vagrant)
 
-We have two different options for creating Virtual Machines, Virtual Box and Vagrant. You can choose one of the two options below.
+We have two different options for creating Virtual Machines, Virtual Box and Incant/Vagrant. You can choose one of the two options below.
 
 ## Virtual Box
 
@@ -28,7 +29,70 @@ apt update
 apt dist-upgrade
 ```
 
+## Incant
+
+Incant is a front end to Incus inspired by Vangrant, which allows provisioning VM/container using a declarative yaml file. Even though it creates a container by default, adding it in this page as a replacement for Vagrant.
+
+Install incant and inus
+
+```
+apt install incant incus
+usermod -a -G incus-admin <username>
+```
+
+Activate the new group as normal user
+
+```
+newgrp incus-admin
+```
+
+Initialize incus
+
+```
+incus admin init
+```
+
+Create incant.yaml
+
+```
+instances:
+  debian-sid:
+    image: images:debian/14
+```
+
+If you want to create a vm instead of container, add vm: true to incant.yml
+
+```
+instances:
+ debian-sid:
+    image: images:debian/14
+    vm: true
+```
+
+Create VM/container,
+
+```
+incant up
+```
+
+You can access the shell with,
+
+```
+incant shell debian-sid
+```
+
+Stopping and starting the container,
+
+```
+incus stop debian-sid
+incus start debian-sid
+```
+
+See [Using Incus](/Packaging/Pre-Requisites/Incus#Using_the_created_container) for more options for managing the VM/container created.
+
 ## Vagrant
+
+Vagrant versions newer than 2.3.7 are not Free Software. See [1049999](https://bugs.debian.org/1049999 "DebianBug"). We recommend you use Incant instead of Vagrant.
 
 If you want to make your job easy just install vagrant
 

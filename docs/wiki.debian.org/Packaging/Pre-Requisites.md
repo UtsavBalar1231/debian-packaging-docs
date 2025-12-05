@@ -8,10 +8,10 @@
 
 Contents
 
-1. [Option 1: Systemd Nspawn and Debspawn](#Option_1:_Systemd_Nspawn_and_Debspawn)
-2. [Option 2: Schroot and Sbuild](#Option_2:_Schroot_and_Sbuild)
+1. [Option 1: Incus](#Option_1:_Incus)
+2. [Option 2: Systemd Nspawn and Debspawn](#Option_2:_Systemd_Nspawn_and_Debspawn)
+3. [Option 3: Schroot and Sbuild](#Option_3:_Schroot_and_Sbuild)
    1. [Configuring locales](#Configuring_locales)
-3. [Option 3: Incus](#Option_3:_Incus)
 4. [Option 4: LXC](#Option_4:_LXC)
 5. [Option 5: Docker](#Option_5:_Docker)
 6. [Option 6: Virtual Machine](#Option_6:_Virtual_Machine)
@@ -26,14 +26,24 @@ Readers note: This page lists 8 different approaches. It doesn't list 8 steps of
 
 If you want to use osx on x86\_64 platform for packaging, refer to docker or virtual machines sections and for arm64 platform use [UTM](https://mac.getutm.app/)
 
-## Option 1: Systemd Nspawn and Debspawn
+If you don't know about these options, Incus is the recommended option.
+
+## Option 1: Incus
+
+Incus is a fork of LXC/LXD by the original LXD developers. It can create a container or a virtual machine.
+
+If you already setup a sid development environment using one of the methods given above, you can skip this step.
+
+* [Using Incus](/Packaging/Pre-Requisites/Incus) for creating a sid development environment.
+
+## Option 2: Systemd Nspawn and Debspawn
 
 If your host system already has systemd as init system, this would be the best option for you.
 
 * [Using Systemd Nspawn](/Packaging/Pre-Requisites/nspawn) for creating a sid development environment
 * [Using debspawn](/Packaging/debspawn) for clean build. sbuild can be used as an alternative to debspawn.
 
-## Option 2: Schroot and Sbuild
+## Option 3: Schroot and Sbuild
 
 If you already have a Debian stable or Debian-based distribution (Arch also has schroot package, though if you have a different distro, you need to check if it has schroot package), this option is best for you. If you are using a chroot for the first time, read this Wikipedia article to learn more <https://en.wikipedia.org/wiki/Chroot>
 
@@ -138,14 +148,6 @@ And run as root user in chroot:
 ```
 
 Now configure your locales according to the instructions on the screen.
-
-## Option 3: Incus
-
-Incus is a fork of LXC/LXD by the original LXD developers.
-
-If you already setup a sid development environment using one of the methods given above, you can skip this step.
-
-* [Using Incus](/Packaging/Pre-Requisites/Incus) for creating a sid development environment.
 
 ## Option 4: LXC
 

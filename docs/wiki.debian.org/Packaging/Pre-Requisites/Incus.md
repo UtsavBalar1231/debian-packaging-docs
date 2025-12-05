@@ -8,8 +8,8 @@ Contents
 
 1. [Install required packages](#Install_required_packages)
 2. [Initialise Incus](#Initialise_Incus)
-3. [Create sid container](#Create_sid_container)
-4. [Using the created container](#Using_the_created_container)
+3. [Create sid container/virtual machine](#Create_sid_container.2Fvirtual_machine)
+4. [Using the created container/virtual machine](#Using_the_created_container.2Fvirtual_machine)
 5. [Create normal user](#Create_normal_user)
 
 If you already have a GNU/Linux system, Incus would be the easiest to setup.
@@ -36,17 +36,25 @@ Then set up Incus for your user with the following command. It will ask a few qu
 incus admin init
 ```
 
-# Create sid container
+# Create sid container/virtual machine
 
-Now create the container named debian-sid.
+Now create the container named debian-sid,
 
 ```
 incus launch images:debian/trixie debian-sid
 ```
 
+Optional: If you want to create a virtual machine instead of a container, you can add --vm option to incus,
+
+```
+incus launch images:debian/trixie debian-sid --vm
+```
+
+A container takes less resources than a virtual machine as the host kernel is shared. But a virtual machine provides stronger isolation, if that is important for you. For learning packaging, container should be sufficient.
+
 Note: Only trixie image is available, see [DebianUnstable](/DebianUnstable) to upgrade to sid
 
-# Using the created container
+# Using the created container/virtual machine
 
 To connect to the container
 

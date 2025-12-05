@@ -25,7 +25,7 @@ Contents
 3. [Manage repositories/sources.list](/SourcesList) (managing the list of websites that serve Deb packages)
 4. [How to install packages from stable-backports](https://backports.debian.org/Instructions/) (there is some extra steps required to get new upstream versions of popular software on a stable system)
 5. apt-file find command to find which package includes a file (usually to find a missing command or header file) - [apt-file tutorial](https://www.computerhope.com/unix/apt-file.htm)
-6. Setup Debian Unstable/Sid using [Systemd Container](/Packaging/Pre-Requisites/nspawn) (hopefully you are now familiar with Lifecycle of a release from previous steps and know new packages or new upstream versions of existing packages are first uploaded to Sid or Unstable, so we do development on this branch of debian)
+6. Setup Debian Unstable/Sid using [Incus](/Packaging/Pre-Requisites/Incus) (hopefully you are now familiar with Lifecycle of a release from previous steps and know new packages or new upstream versions of existing packages are first uploaded to Sid or Unstable, so we do development on this branch of debian)
 7. [Building existing packages from source](/BuildingTutorialSimplified). Learning to build from source is useful when you want to backport a package (for example you want to rebuild a new version of a package from unstable or testing on your stable system). This is also useful if you want to modify an existing package, for example to fix a bug or cherry pick a commit from upstream.
 
 By this time you should be familiar with
