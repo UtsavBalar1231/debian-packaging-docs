@@ -49,7 +49,7 @@ newgrp incus-admin
 Initialize incus
 
 ```
-incus admin init
+incus admin init --auto
 ```
 
 Create incant.yaml
