@@ -459,6 +459,7 @@ If all goes well, you can undo this commit before your next merge, by doing gitÂ
   + [from the Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/ch11.en.html)
   + [from Russ Allbery](https://www.eyrie.org/~eagle/notes/debian/git.html)
   + [from Philipp Huebner](http://people.debian.org/~debalance/packaging-with-git.html)
+  + [Creating Debian packages from upstream Git](https://optimizedbyotto.com/post/debian-packaging-from-git/)
 * discussions about including the upstream git in the package's git 
   + [by Russ Allbery](http://www.eyrie.org/~eagle/journal/2013-04/001.html)
   + [by Joey Hess](http://joeyh.name/blog/entry/upstream_git_repositories/)
