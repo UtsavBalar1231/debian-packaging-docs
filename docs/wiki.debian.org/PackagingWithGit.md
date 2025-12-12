@@ -252,7 +252,7 @@ This file acts both as a human-readable history of the project, and as a machine
 
 You need to decide a policy about what to include in your changelog. This section discusses some policy questions to help decide your policy, and some tools to help automate your workflow.
 
-See also [debian/changelog](/debian/changelog).
+See also [DebianChangelog](/DebianChangelog).
 
 ### Common policy questions
 
