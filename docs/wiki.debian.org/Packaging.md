@@ -372,6 +372,7 @@ All pages related to packaging in Debian:
 144. [tag2upload](/tag2upload?highlight=%28%5CbCategoryPackaging%5Cb%29)
 145. [udeb](/udeb?highlight=%28%5CbCategoryPackaging%5Cb%29)
 146. [zh\_CN/DebianRepository/Setup](/zh_CN/DebianRepository/Setup?highlight=%28%5CbCategoryPackaging%5Cb%29)
+147. [zh\_CN/sbuild](/zh_CN/sbuild?highlight=%28%5CbCategoryPackaging%5Cb%29)
 
 ---
 
