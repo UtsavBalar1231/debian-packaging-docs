@@ -4,7 +4,7 @@
 
 ---
 
-[Translations](/DebianWiki/EditorGuide#translation): [English](/PackagingWithGit) - [Deutsch](/de/PackagingWithGit) - [Italiano](/it/PackagingWithGit) - [Indonesian](/id/PackagingWithGit) - [Português (Brasil)](/pt_BR/PackagingWithGit)
+[Translations](/DebianWiki/EditorGuide#translation): [English](/PackagingWithGit) - [Deutsch](/de/PackagingWithGit) - [Italiano](/it/PackagingWithGit) - [Indonesian](/id/PackagingWithGit) - [Português (Brasil)](/pt_BR/PackagingWithGit) - [Русский](/ru/PackagingWithGit)
 
 ---
 
