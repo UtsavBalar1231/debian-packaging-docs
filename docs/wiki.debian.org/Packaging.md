@@ -51,9 +51,9 @@ New tools are invented every few years, and the best way to use them depends on 
   + [Debian source packages in git explained](https://optimizedbyotto.com/post/debian-source-package-git/)
 * [packaging with git](/PackagingWithGit) discusses common git-based workflows
 * [the debconf developers guide](https://manpages.debian.org/man/debconf-devel "DebianMan") explains how to ask the user questions during installation
-* [Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/index.en.html) provides a reference for common tools discussed in tutorials
+* [Debian New Maintainers' Guide](https://www.debian.org/doc/manuals/maint-guide/index.en.html) covers debian source package fundamentals and is a must-read;
 
-  + replaces the outdated [Debian New Maintainers' Guide](https://www.debian.org/doc/manuals/maint-guide/index.en.html)
+  + [Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/index.en.html) covers much of the above with the addition of the *debmake* tool.
 
 ![{i}](/htdocs/debwiki/img/icon-info.png "{i}") Debian packaging works by example as much as by theory. Find well-maintained packages, and see how they do it!
 
