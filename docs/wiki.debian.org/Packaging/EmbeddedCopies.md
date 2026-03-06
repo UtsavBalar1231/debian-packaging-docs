@@ -35,6 +35,7 @@ All Debian members have commit access to the security-tracker repository and oth
 * [Clonewise](https://github.com/silviocesare/Clonewise) is a tool not yet in Debian that could be used to [find unfixed vulnerabilities because of embedded code copies](https://lists.debian.org/msgid-search/CA+ygN1LxTeSFSt45qDC2KLKbYUWTqPvrm5ZHvEjjoEkuDL4f5g@mail.gmail.com/firsthit).
 * [SourcererCC](https://github.com/Mondego/SourcererCC) is another tool for detecting embedded code copies.
 * [Sokrates](https://www.sokrates.dev/) can also do [duplication detection](https://www.sokrates.dev/book/duplication).
+* [JPlag](https://github.com/jplag/JPlag) finds pairwise similarities among a set of multiple programs
 
 The [Debian Sources](https://sources.debian.org/) service allows [searching](https://sources.debian.org/advancedsearch/) for specific hashes and ctags throughout all Debian source code, which may be useful for detecting duplication of source code and data.
 

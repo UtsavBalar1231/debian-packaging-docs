@@ -74,7 +74,7 @@ See [AutomaticPackagingTools](/AutomaticPackagingTools).
 
 Tools to maintain copyright information in debian/copyright.
 
-See [CopyrightReviewTools](/CopyrightReviewTools).
+See [CopyrightReviewTools](/CopyrightReviewTools) for tools not only about reviewing and validating copyright and license information.
 
 ## Package-checking tools
 
