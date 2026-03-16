@@ -369,9 +369,10 @@ All pages related to packaging in Debian:
 141. [pt\_BR/AdvancedBuildingTips](/pt_BR/AdvancedBuildingTips?highlight=%28%5CbCategoryPackaging%5Cb%29)
 142. [pt\_PT/Teams](/pt_PT/Teams?highlight=%28%5CbCategoryPackaging%5Cb%29)
 143. [sbuild](/sbuild?highlight=%28%5CbCategoryPackaging%5Cb%29)
-144. [udeb](/udeb?highlight=%28%5CbCategoryPackaging%5Cb%29)
-145. [zh\_CN/DebianRepository/Setup](/zh_CN/DebianRepository/Setup?highlight=%28%5CbCategoryPackaging%5Cb%29)
-146. [zh\_CN/sbuild](/zh_CN/sbuild?highlight=%28%5CbCategoryPackaging%5Cb%29)
+144. [tag2upload](/tag2upload?highlight=%28%5CbCategoryPackaging%5Cb%29)
+145. [udeb](/udeb?highlight=%28%5CbCategoryPackaging%5Cb%29)
+146. [zh\_CN/DebianRepository/Setup](/zh_CN/DebianRepository/Setup?highlight=%28%5CbCategoryPackaging%5Cb%29)
+147. [zh\_CN/sbuild](/zh_CN/sbuild?highlight=%28%5CbCategoryPackaging%5Cb%29)
 
 ---
 
