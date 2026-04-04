@@ -7,7 +7,37 @@
 **[Debian Policy Manual: 4.13. Embedded code copies](https://www.debian.org/doc/debian-policy/ch-source.html#embedded-code-copies)**  
 Some software packages include in their release distributions "convenience" copies of code from other software packages, generally so that users compiling from source don’t have to download multiple archives. Debian packages should not make use of these copies unless the included package is explicitly intended to be used in this way. If the included code is already in the Debian archive in the form of a library, the Debian packaging should ensure that binary packages reference the libraries already in Debian and not the embedded copy. If the included code is not already in Debian, it should be packaged separately as a prerequisite dependency, if possible.
 
-**Embedded copies of code, data, fonts or other things** should be removed from the upstream VCS and source tarballs. Upstream might want to only embed the copies in the binary packages they distribute, script the install of their dependencies and or bundle the dependencies into a single but separate source tarball rather than embedding copies of them. Once upstream has fixed the issue, the Debian package can then be updated to the fixed version. If upstream refuse to remove the embedded copies, then Debian should either repack the upstream tarball using [Files-Excluded](/UscanEnhancements) (if there is a [DFSG](/DebianFreeSoftwareGuidelines) or size issue) or remove the files in [debian/rules](/Teams/Dpkg/DebianRules)' clean target and/or very early in the build target, so that there is no chance of them being used by the build process.
+# Embedded Copies
+
+## Debian discourages embedded copies (vendoring) where possible
+
+It is recommended that Debian packages do not ship embedded copies of **code, data, fonts or other things**. Instead, package dependencies should be kept separate, and dependencies used to ensure the needed items are installed.
+
+Shipping embedded copies (also known as 'vendoring') is discouraged because:
+
+* It makes it more likely that users are exposed to known security issues. Debian considers it is better to have a single place to make security and other fixes. Fixing issues in vendored items requires more manual work, and embedded copies may be missed.
+* Embedded items tend to be older versions that are no longer supported by the author of the embedded item. This leads to unfixed bugs.
+* Multiple copies of the embedding items are needless duplication on user systems, and in the debian archive.
+
+In practice, some upstreams explicitly design their software to vendor huge numbers of packages and removing the vendoring is impractical. Vendoring is reluctantly tolerated for non-libraries in some circumstances: see [Debian Policy Manual: 4.13. Embedded code copies](https://www.debian.org/doc/debian-policy/ch-source.html#embedded-code-copies).
+
+## Packaging with embedded copies
+
+When packaging software that has embedded copies, you should ask upstream to consider removing them from the upstream VCS and source tarballs. If upstream removes the embedded items, the Debian package can then be updated to the fixed version. Alternatives for upstream include:
+
+* using dependencies. many ecosystems have package managers that support dependencies;
+* only embedding the copy in the binary tarballs they distribute;
+* scripting the install dependencies; or
+* bundling dependencies into a single, separate, tarball instead of embedding.
+
+If upstream refuse to remove the embedded copies, then Debian should either:
+
+* repack the upstream tarball using [Files-Excluded](/UscanEnhancements). This is particularly appropriate if there is a [DFSG](/DebianFreeSoftwareGuidelines) or size issue.
+* remove the files when building the package. 
+
+  This can be done in the [debian/rules](/Teams/Dpkg/DebianRules)' clean target, or early in the build target, to ensure the copy is not used in the build process.
+
+## Tracking embedded copies
 
 The [list of packages that embed copies (including unused ones) of other projects](https://salsa.debian.org/security-tracker-team/security-tracker/raw/master/data/embedded-code-copies) is maintained in the security-tracker git repository. This list also contains information about forks so that the security team can check if all forks contain the same vulnerabilities.
 
