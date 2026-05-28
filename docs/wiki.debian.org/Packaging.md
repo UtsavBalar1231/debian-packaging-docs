@@ -230,7 +230,7 @@ All pages related to packaging in Debian:
 2. [Alioth](/Alioth?highlight=%28%5CbCategoryPackaging%5Cb%29)
 3. [AndroidTools](/AndroidTools?highlight=%28%5CbCategoryPackaging%5Cb%29)
 4. [AutomaticPackagingTools](/AutomaticPackagingTools?highlight=%28%5CbCategoryPackaging%5Cb%29)
-5. [BoostrapBootableSystem](/BoostrapBootableSystem?highlight=%28%5CbCategoryPackaging%5Cb%29)
+5. [BootstrapBootableSystem](/BootstrapBootableSystem?highlight=%28%5CbCategoryPackaging%5Cb%29)
 6. [BuildingFormalBackports](/BuildingFormalBackports?highlight=%28%5CbCategoryPackaging%5Cb%29)
 7. [BuildingWithoutFakeroot](/BuildingWithoutFakeroot?highlight=%28%5CbCategoryPackaging%5Cb%29)
 8. [BzrBuildpackage/DesignIdeas](/BzrBuildpackage/DesignIdeas?highlight=%28%5CbCategoryPackaging%5Cb%29)
