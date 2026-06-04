@@ -30,6 +30,8 @@ Allow your user to use incus with the following command.
 sudo usermod -a -G incus-admin "$USER"
 ```
 
+After that, log out and back in for the changes to take effect.
+
 Then set up Incus for your user with the following command. It will ask a few questions for which the defaults are fine to accept if you are unsure.
 
 ```
